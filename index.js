@@ -36,7 +36,38 @@ const main = async () => {
                 'Exit'
             ]
         }
-    ]);}}
+    ]);}
+    switch(action) {
+        case 'View all departments':
+            await viewAllDepartments(connection);
+            break;
+        case 'View all roles':
+            await viewAllRoles(connection);
+            break;
+        case 'View all employees':
+            await viewAllEmployees(connection);
+            break;
+        case 'Add a department':
+            await addDepartment(connection);
+            break;
+        case 'Add a role':
+            await addRole(connection);
+            break;
+        case 'Add an employee':
+            await addEmployee(connection);
+            break;
+        case 'Update an employee role':
+            await updateEmployeeRole(connection);
+            break;
+        case 'Exit':
+            connection.end();
+            process.exit(0);
+        default:
+            console.log('Action not recognized!');
+    }
 
+    
+    main();
+}
     main()
     .catch(err => console.error(err));
