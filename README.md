@@ -13,12 +13,12 @@ The application is written in JavaScript, using Node.js for the backend, MySQL f
 - Add a role: Allows you to add a new role to the database. You will be prompted to enter the role's title, salary, and associated department.
 - Add an employee: Allows you to add a new employee to the database. You will be prompted to enter the employee's first name, last name, role, and manager.
 - Update an employee's role: Allows you to update the role of an existing employee.
-# How to Use
+## How to Use
 1. Clone the repository.
 2. Run npm install to install the dependencies.
 3. Run node index.js to start the application.
 4. Follow the prompts to interact with the employee database.
-# Dependencies
+## Dependencies
 - Node.js
 - MySQL
 - Inquirer.js
